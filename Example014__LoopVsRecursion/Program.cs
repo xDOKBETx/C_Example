@@ -4,7 +4,7 @@
 string NumbersFor(int a, int b) // Строковая функция
 {
     string result = String.Empty;  // Пустая строка
-    for (int i = b; i >= a; i--) // Для счётчика i присваиваем значение b; пока i больше-равно a; уменьшаем значение счётчика на -1
+    for (int i = a; i >= b; i--) // Для счётчика i присваиваем значение b; пока i больше-равно a; уменьшаем значение счётчика на -1
     {
         result += $"{i} "; // Записываем в result значения счётчика + прибавляем к нему result(result = result + $"{i}")
     }
@@ -18,5 +18,5 @@ string NumbersRec(int a, int b) // Строковая функция
     else return String.Empty; // Иначе возвращаем пустую строку
 }
 
-Console.WriteLine(NumbersFor(1, 10));
+Console.WriteLine(NumbersFor(10, 1));
 Console.WriteLine(NumbersRec(1, 10));
